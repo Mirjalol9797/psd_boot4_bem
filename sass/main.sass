@@ -1,0 +1,593 @@
+@import "fonts.css"
+
+body 
+    font-family: 'osr'
+
+.button 
+    padding: 10px 25px
+    margin: 0 10px
+    color: #fff
+    transition: 0.3s
+    background: #00897b
+    border: 2px solid #00897b 
+
+    &:hover
+        background: transparent
+        border: 2px solid #fff
+
+
+
+ul, li 
+    display: block
+    padding: 0
+    margin: 0
+
+#to_top
+    z-index: 999
+    width: 40px
+    height: 40px
+    border:none
+    border-radius: 50%
+    background: #00897b
+    text-align: center
+    transform: rotate(180deg)
+    position: fixed
+    bottom: 10px
+    right: 10px
+    cursor: pointer
+    display: none
+
+    img 
+        margin-top: 12px
+
+/*style menu start*/
+.menu-bar 
+    color: #212121
+    padding: 20px 0
+    background: #fff
+    
+    .menu__mobil
+        width: 25px
+        height: 2px
+        background: #000
+        border: none
+        position: relative
+        display: none
+
+        &:after
+            content: ""
+            width: 25px
+            height: 2px
+            background: #000
+            position: absolute
+            top: 6px
+            left: 0
+
+        &:before
+            content: ""
+            width: 25px
+            height: 2px
+            background: #000
+            position: absolute
+            top: -6px
+            left: 0
+            
+    
+    .logo 
+        font-size: 30px
+    
+    .menu_item
+        margin-left: 37px
+    
+    a 
+        font-family: 'ossb'
+        font-size: 18px
+        color: #212121
+
+        &:hover 
+            text-decoration: none
+            color: #4c4b4b
+
+/*style menu finish*/
+
+/*style header-ban start*/
+.header-ban 
+    background-image: url(../img/header.png)    
+    padding: 180px 0
+    text-align: center
+    color: #fff
+    background-size: cover
+    background-position: 0 100%
+
+    &__title 
+        font-size: 55px
+
+    &__text 
+        font-size: 20px
+        margin-bottom: 100px
+
+/*style header-ban finish*/
+
+.section__title
+    font-size: 30px
+    font-weight: 700
+    color: #000
+
+.section__miniTitle
+    font-size: 20px
+    font-family: 'ossb'
+    margin: 30px 0 20px
+
+.section__textUnder
+    font-size: 15px
+    margin-bottom: 110px
+    color: #212121    
+
+.section__text
+    font-size: 15px
+    color: #212121    
+
+
+/*style section-about start*/
+.section__about 
+    color: #000
+    text-align: center
+    padding: 120px 0
+
+/*style section-about finish*/
+
+/*style section-services start*/
+.section__services
+    color: #000
+    text-align: center
+    padding: 120px 0
+    background: #e4fdf9
+
+    &__item 
+        background: #fff
+        padding: 50px 25px 40px
+        transition: 0.3s
+        margin-bottom: 30px
+        border-radius: 5px
+
+        &:hover 
+            background: #00897b
+            color: #fff
+            box-shadow: 0px 10px 12px -3px rgba(0, 0, 0, 0.26)
+
+            .section__text 
+                color: #fff
+            
+            .section__services__item_b 
+                display: none
+            .section__services__item_n 
+                display: inline-block
+            .section__services__button 
+                color:#fff
+                border: 2px solid #fff
+            
+
+        &_n 
+            display: none
+        
+
+    &__button 
+        text-transform: uppercase
+        border: 2px solid #000
+        background: transparent
+        padding: 10px 12px
+        font-family: 'ossb'
+        border-radius: 5px
+/*style section-services finish*/
+
+/*style section-portfolio start*/
+.section__portfolio
+    padding: 120px 0
+    text-align: center
+
+    &__btn 
+        padding: 10px 25px
+        margin: 0 10px
+        color: #212121
+        transition: 0.3s
+        background: #fff
+        border: 2px solid #00897b 
+        outline:none 
+
+        &:hover
+            background: #00897b
+            border: 2px solid #00897b
+            color: #fff
+
+    &__text
+        display: none            
+
+    &__imgBlock
+        margin: 120px 0
+
+        > div
+            padding: 0 5px
+            position: relative
+
+            &:hover 
+                img 
+                    filter: brightness(50%)
+                    transition: 0.3s
+
+                .section__portfolio__text
+                    display: block
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, -50%)
+                    color: #fff
+        img 
+            margin-bottom: 30px
+            width: 100%
+
+
+.focused
+    background: #00897b
+    border: 2px solid #00897b
+    color: #fff
+    border-radius: 0
+/*style section-portfolio finish*/
+
+/*style section-plan start*/
+.section__plan
+    background: #f0f1f1
+    padding: 120px 0
+    text-align: center
+
+    &__item
+        background: #fff
+        transition: 0.3s
+        &:hover 
+            box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.39)
+    
+    &__top
+        background-image: url(../img/plan_fon.png)
+        padding-top: 40px
+        padding-bottom: 60px
+        background-size: cover
+        background-repeat: no-repeat
+        height: 210px
+        color: #fff
+        font-size: 50px
+        sub     
+            font-size:17px
+            vertical-align: middle
+        sup
+            font-size: 25px
+            vertical-align: middle
+
+        p 
+            font-size: 25px    
+    
+    &__list 
+        font-size: 17px
+        color: #212121
+        
+        li
+            margin: 0 auto
+            max-width: 175px
+            border-bottom: 1px solid #bfbfbf
+            padding-top: 28px
+            padding-bottom: 12px
+
+    &__button
+        margin: 60px 0
+        color: #212121
+        background: transparent
+        padding: 15px 30px
+        border: 2px solid #212121
+        transition: 0.3s    
+
+        &:hover 
+            color: #fff
+            background: #00897b
+            border: 2px solid #00897b
+/*style section-plan finish*/
+
+/*style section-member start*/
+.section__member
+    padding: 120px 0
+    text-align: center
+
+    &__item 
+        h4
+            font-size: 20px
+            font-family: 'ossb'
+            margin-top: 30px
+        p
+            font-size: 15px 
+            margin-bottom: 30px
+
+        img 
+            width: 100%
+    
+    .dots-style
+        margin-top: 115px
+        display: flex
+        justify-content: center
+    
+        button  
+            background: #00897b
+            border: none
+            border-radius: 50%
+            font-size: 0
+            height: 15px
+            width: 15px
+            margin: 5px
+        .slick-active button
+            background: #3949ab
+
+/*style section-member finish*/
+
+/*style section-blog start*/
+.section__blog
+    padding: 120px 0
+    text-align: center   
+    background: #f0f1f1
+
+    &__item
+        &:nth-child(odd)
+            .section__blog__item__leftColumn
+                order: 2
+            .section__blog__item__rightColumn
+                order: 1
+        
+        &__rightColumn
+            img 
+                width: 100%
+        &__leftColumn
+            text-align: left
+            margin: 60px 0 0 0px
+            a 
+                font-size: 25px
+                color: #00897b
+                font-family: 'ossb'
+                margin-bottom: 25px
+                display: block
+            span 
+                font-size: 17px
+                font-family: 'ossb'
+                margin-bottom: 25px
+            .profes
+                margin-left: 17px
+        
+        &__date
+            margin-bottom: 15px
+        
+        &__text
+            font-size: 15px
+            
+    &__item
+        &:nth-child(even)
+            .section__blog__item__leftColumn
+                order: 1
+            .section__blog__item__rightColumn
+                order: 2
+
+    &__btn
+        padding: 10px 25px
+        margin: 120px 0 0 
+        color: #212121
+        transition: 0.3s
+        background: #fff
+        border: 2px solid #00897b 
+        outline:none 
+
+        &:hover
+            background: #00897b
+            border: 2px solid #00897b
+            color: #fff  
+/*style section-blog finish*/
+
+/*style footer start*/
+.footer
+    padding: 120px 0
+    text-align: center
+    color: #fff
+    background-image: url(../img/footer_bg.png)
+    background-size: cover
+    background-repeat: no-repeat 
+
+    .section__title 
+        color: #fff
+    
+    .section__textUnder
+        color: #fff
+
+    &__contact
+        color: #fff
+
+        &__item
+            display: flex
+            align-items: center
+            flex-direction: column
+            margin-bottom: 70px
+            &__img 
+                background: #3949ab
+                border-radius: 50%
+                padding: 10px
+                width: 100px
+                height: 100px
+                display: flex
+                align-items: center
+                justify-content: center
+                margin-bottom: 30px
+            
+            span 
+                a 
+                    color: #fff
+                    text-decoration: none
+    
+    &__form
+    
+        form 
+            width: 100%
+        &__input
+            display: inline-block
+            margin-bottom: 30px
+        input
+            padding: 20px 15px
+            border-radius: 5px
+            width: 100%
+            border: none
+            outline: none
+        
+        textarea 
+            width: 100%
+            border-radius: 5px
+            padding: 10px
+            margin-bottom: 30px
+            border: none
+            outline: none
+            resize: none
+        
+        button
+            color: #212121
+            background: #fff
+            text-transform: uppercase
+            padding: 15px 60px
+            border-radius: 5px
+            font-family: 'ossb'
+
+.copyright
+    color: #212121
+    font-family: 'ossb'
+    font-size: 16px
+    text-align: center
+    padding: 15px 0
+
+
+@media screen and (max-width: 991px) 
+    .header__container
+        max-width: 100%
+    .header-ban
+        padding: 80px 0
+    .section__textUnder
+        margin-bottom: 50px
+    .section__miniTitle
+        margin: 10px 0
+
+
+    .section__about
+        padding: 80px 0 60px 
+
+        &__item
+            margin-bottom: 40px
+
+    .section__services
+        padding: 80px 0
+
+        &__container
+            max-width: 100%
+
+    .section__portfolio
+        padding: 80px 0
+
+        &__imgBlock
+            margin: 60px 0
+
+    .section__plan
+        padding: 80px 0
+
+        &__container    
+            max-width: 100%
+
+    .section__member
+        padding: 80px 0
+        
+        .dots-style
+            margin-top: 50px
+
+    .section__blog
+        padding: 80px 0
+        
+        &__item
+            margin-bottom: 25px
+
+            &__leftColumn
+                margin: 0
+        
+        &__btn  
+            margin-top: 60px
+
+    .footer
+        padding: 80px 0
+
+@media all and (max-width: 767px)
+    nav 
+        display: none
+
+    .menu-bar .menu__mobil
+        display: block
+    
+    .menu-bar .menu_item
+        margin-left: 10px
+
+    .header__menu__mobil
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+    .section__portfolio__container
+        max-width: 100%
+    .section__plan__item
+        margin-bottom: 25px
+    
+    .section__blog__container
+        max-width: 100%
+
+@media all and (max-width: 640px)
+    .header-ban__title
+        font-size: 30px
+
+@media all and (max-width: 480px)
+    .header-ban
+        padding: 60px 0 
+
+        &__text 
+            font-size: 15px
+            margin-bottom: 20px
+
+        .button
+            font-size: 14px
+            padding: 5px 15px
+    
+    .section__about
+        padding: 60px 0 40px
+    
+    .section__services
+        padding: 60px 0
+    
+    .section__portfolio
+        padding: 60px 0
+        &__buttons
+            flex-direction: column
+            align-items: center
+        &__btn  
+            max-width: 150px
+            width: 100%
+            margin-bottom: 5px
+            
+    .section__plan
+        padding: 60px 0
+    .section__member
+        padding: 60px 0
+    .section__blog
+        padding: 60px 0
+
+        &__item 
+            flex-direction: column
+            &:nth-child(even) .section__blog__item__rightColumn            
+                order: 1
+
+    .section__portfolio__btn
+        padding: 5px 10px
+        font-size: 14px
+
+    .footer
+        padding: 60px 0        
